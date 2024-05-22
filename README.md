@@ -20,12 +20,13 @@ Options:
 ## Taxonomy table
 Example for OTU table:  
 | OtuID  | Sample1  | Sample2  | Sample3 | ...  |
-|:-------:|:-------:|:-------:|:-------:|:-------:|
+|:-----:|:-----:|:-----:|:-----:|:-----:|
 | Otu1 | 223 | 6613 | 11887 | ... |  
 | Otu2 | 3032 | 10796 | 3389 | ... |   
 | Otu3 | 508 | 5872 | 5390 | ...  |  
 | Otu4 | 38 | 1400 | 420 | ... |  
-| ... | ... | ... | ... | ... |    
+| ... | ... | ... | ... | ... |  
+  
 Then you can turn OTU table to OTU frequency table by `OtuFrequency.pl`  
 ```Bash  
 OtuFrequency.pl otutab.txt > otutab.freq
@@ -37,7 +38,7 @@ The result would like this:
 | Otu2 | 4.913 | 14.955 | 4.757 | ... |  
 | Otu3 | 0.823 | 8.134 | 7.566 | ... |  
 | Otu4 | 0.062 | 1.939 | 0.590 | ... |  
-| ... | ... | ... | ... | ... |
+| ... | ... | ... | ... | ... |  
   
 Last using `RdpTaxonomyFrequency.pl` to make Taxonomy table  
 ```Bash  
@@ -51,15 +52,15 @@ Options:
 Example for `sample mapping` file  
 | name | group | sex |
 |:-----:|:-----:|:-----:|
-| Tony | 1 | M |
-| Alex | 2 | M |
-| Jessica | 3 | F |
-| Shirling | 4 | F |  
+| Sample1 | 1 | M |
+| Sample2 | 2 | M |
+| Sample3 | 3 | F |
+| Sample4 | 4 | F |  
 
 Then we can starting plot the Taxonomy composition barplot!!  
 Make sure the RDPBar.r is in your bin.  
 ```Bash  
-Rdp_bar_plot.pl -s ../../../sample_mapping.txt oturdp.family.freq  
+Rdp_bar_plot.pl -s sample_mapping.txt oturdp.family.freq  
 ```
 Options:  
 
