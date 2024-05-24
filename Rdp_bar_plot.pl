@@ -87,10 +87,10 @@ foreach my $e (sort {$a cmp $b} keys %h) {
 close OUT;
 
 if ($element eq "") {
-	($output)? `/mnt/80T/alex/bin/RDPbar.r -m $sample_mapping -n $output -g $group -o $output -l $label -H $height -W $width r.txt` : `RDPbar.r -m $sample_mapping -n $name -g $group -l $label -H $height -W $width r.txt`;
+	($output)? `RDPbar.r -m $sample_mapping -n $output -g $group -o $output -l $label -H $height -W $width r.txt` : `RDPbar.r -m $sample_mapping -n $name -g $group -l $label -H $height -W $width r.txt`;
 	#`rm r.txt`;
 } else {
-	($output)? `/mnt/80T/alex/bin/RDPbar.r -m $sample_mapping -n $output -e $element -g $group -o $output -l $label -H $height -W $width r.txt` : `RDPbar.r -m $sample_mapping -n $name -e $element -g $group -l $label -H $height -W $width r.txt`;
+	($output)? `RDPbar.r -m $sample_mapping -n $output -e $element -g $group -o $output -l $label -H $height -W $width r.txt` : `RDPbar.r -m $sample_mapping -n $name -e $element -g $group -l $label -H $height -W $width r.txt`;
 	#`rm r.txt`;
 }
 
