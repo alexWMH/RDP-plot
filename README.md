@@ -73,6 +73,7 @@ Options:
 `-W`: Plot width; default = 80.  
 `-h`: Show this message.  
   
-The result will be like  
+## The result will be like:
+    
 ![test](https://github.com/alexWMH/Taxonomy-barplot/assets/128213313/54ec73f9-1b53-4e95-a7c7-bc86d23f8bc7)
 
